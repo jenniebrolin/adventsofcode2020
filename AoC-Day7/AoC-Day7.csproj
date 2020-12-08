@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AoC_Day7</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="rules.txt" />
+    <None Remove="test.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="rules.txt" />
+    <EmbeddedResource Include="test.txt" />
+  </ItemGroup>
+
+</Project>

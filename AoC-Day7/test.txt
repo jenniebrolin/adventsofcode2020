@@ -1,0 +1,5 @@
+﻿bright coral bags contain 1 clear green bag, 2 shiny gold bags.
+bright black bags contain 4 bright coral bags, 2 vibrant plum bags.
+clear green bags contain no other bags.
+vibrant plum bags contain 5 clear green bags.
+shiny gold bags contain 5 vibrant plum bags.
