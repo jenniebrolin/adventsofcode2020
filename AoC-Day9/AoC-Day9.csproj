@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AoC_Day9</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="micro.txt" />
+    <None Remove="test.txt" />
+    <None Remove="xmas.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="micro.txt" />
+    <EmbeddedResource Include="test.txt" />
+    <EmbeddedResource Include="xmas.txt" />
+  </ItemGroup>
+
+</Project>

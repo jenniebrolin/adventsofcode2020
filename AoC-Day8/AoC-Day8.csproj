@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AoC_Day8</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="boot.txt" />
+    <None Remove="small.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="boot.txt" />
+    <EmbeddedResource Include="small.txt" />
+  </ItemGroup>
+
+</Project>

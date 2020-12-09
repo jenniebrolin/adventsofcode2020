@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>AoC_Day5</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="seats.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="seats.txt" />
+  </ItemGroup>
+
+</Project>

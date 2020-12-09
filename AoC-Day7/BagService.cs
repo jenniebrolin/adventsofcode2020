@@ -53,20 +53,19 @@ namespace AoC_Day7
 
         public IEnumerable<(string, (int, string)[])> GetBagNodes(string resname)
         {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resname))
-            using (var sr = new StreamReader(stream))
+            using var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resname);
+            using var sr = new StreamReader(stream);
+            string line;
+            while ((line = sr.ReadLine()) != null)
             {
-                string line;
-                while ((line = sr.ReadLine()) != null)
+                var parts = SplitBig(line);
+                var kids = parts.Skip(1).Select(s =>
                 {
-                    var parts = SplitBig(line);
-                    var kids = parts.Skip(1).Select(s => {
-                        var bag = SplitSmall(s);
-                        return (int.Parse(bag[0]), bag[1]);
-                    });
-                     
-                    yield return (parts[0], kids.ToArray());
-                }
+                    var bag = SplitSmall(s);
+                    return (int.Parse(bag[0]), bag[1]);
+                });
+
+                yield return (parts[0], kids.ToArray());
             }
         }
     
